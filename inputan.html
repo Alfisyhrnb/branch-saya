@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    body,
+    html {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      background-color: #0f0f0f;
+      color: #fff;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      /*height: 100vh;*/
+    }
+
+    .container>label {
+      color: white;
+      margin-top: 10px;
+    }
+
+    .container>input {
+      background: #333;
+      color: #fff;
+      padding: 10px;
+      border: none;
+      margin: 4px;
+    }
+
+    .container>input::placeholder {
+      color: lightgray;
+    }
+
+    .container>input[type="radio"] {
+      accent-color: black;
+    }
+
+    .container>input[type="checkbox"] {
+      accent-color: rgb(75, 18, 231);
+    }
+
+    select {
+      background-color: #333;
+      color: #fff;
+    }
+
+    .container>textarea {
+      background: #333;
+      color: #fff;
+    }
+
+    .container>textarea::placeholder {
+      color: gray;
+    }
+    .container > button {
+      background: rgb(223, 15, 57);
+      color: #0a0606;
+      font-size: 16px;
+      font-style: italic;
+      font-weight: normal;
+      padding: 10px 30px;
+      border: none;
+      border-radius: 5px;
+      transition: transform 0.4s;
+    }
+    .container > button:active {
+      transform: scale(1.0);
+    }
+    
+    .container > button:before {
+      content: "Click ";
+    }
+    
+    .container > button:after {
+      content: "Me!";
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <label>Input text</label>
+    <input type="text" placeholder="ALFI">
+    <input type="url" placeholder="https://Baihaqi17.com">
+    <input type="number" placeholder="13522003">
+    <input type="email" placeholder="alfibaihaqi17@gmail.com">
+    <input type="search" placeholder="free">
+
+    <label>Input radio</label>
+    <input type="radio" name="gender" value="male">
+    <label for="male">Male</label>
+    <input type="radio" name="gender" value="female">
+    <label for="female">Female</label>
+    <input type="radio" name="gender" value="other">
+    <label for="other">Other</label>
+
+    <label>Input checkbox</label>
+    <input type="checkbox" checked="true" name="subscribe" value="yes">
+    <label for="subscribe">Subscribe to newsletter</label>
+
+    <label>Input select</label>
+    <select name="country">
+      <option value="null">Select Option</option>
+      <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="3">Thre</option>
+      <option value="4">Four</option>
+    </select>
+
+    <label>Text area</label>
+    <textarea name="message" placeholder="Enter your message"></textarea>
+
+    <label>Input date</label>
+    <input type="date" id="dateInput" name="birthdate">
+
+    <label>Input color</label>
+    <input type="color" name="favcolor">
+
+    <label>Input file</label>
+    <input type="file" name="fileupload">
+    <label>simpan</label>
+    <button id="btn"></button>
+
+    <script>
+      var currentDate = new Date();
+
+      var formattedDate = currentDate.toISOString().substr(0, 10);
+
+      document.getElementById("dateInput").value = formattedDate;
+
+      
+    </script>
+  </div>
+</body>
+
+</html>
