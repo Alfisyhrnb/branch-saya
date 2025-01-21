@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background: url('') no-repeat center center fixed;
+    background-size: cover;
+}
+header {
+    background: url('https://wallpapers.com/images/hd/information-technology-1440-x-900-background-p1c1dbydenflfzeo.jpg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed; /* Membuat background tetap saat scroll */
+}
+header {
+    color: white;
+    padding: 10rem 20rem;
+    text-align: center;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #312e2e;
+}
+nav a {
+    color: rgb(255, 255, 255);
+    padding: 2rem;
+    text-decoration: none; 
+}
+nav a:hover {
+    background-color: #f3efef;
+}
+nav a {
+    color: rgb(255, 255, 255);
+    padding: 1rem;
+    text-decoration: none;
+}
+nav a:hover {
+    background-color: #cfcaca;
+}
+section {
+    padding: 1rem;
+}
+section {
+    padding: 1rem;
+    margin:1rem;
+    background-color: #ffffff;
+}
+.about {
+    background-color: #f4f4f4;
+    padding: 2rem;
+}
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+}
+.project {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 1rem;
+    background-color: white;
+}
+.contact {
+    background: url('https://wallpapers.com/images/high/information-technology-dna-graphic-pa9ocw0ok1doalhu.webp') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed; /* Membuat background tetap saat scroll */
+    text-align: center;
+    padding: 2rem;
+    background-color: #333;
+    color: white;
+}
+.contact a {
+    color: #ffffff;
+    text-decoration: none;
+}
